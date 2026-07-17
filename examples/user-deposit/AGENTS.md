@@ -1,0 +1,2 @@
+- dev use bun
+- prod use node

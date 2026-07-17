@@ -1,0 +1,179 @@
+{
+  "blockID": "000000000420b8e2bd3fd2d310b07cacbd18f345fcde7a0ba09746806f35dc8b",
+  "block_header": {
+    "raw_data": {
+      "timestamp": 1784265540000,
+      "txTrieRoot": "0b278f25756884f4e33dc76392f407da61ab53501dcd96b31464eaa235a77e1d",
+      "parentHash": "000000000420b8e1a5a6ddc73b219f3649360d20367adf236548fbf2bbc5f45e",
+      "number": 69253346,
+      "witness_address": "4166f227fa01b58c6e74dbf61bcce5f608dd6b2437",
+      "version": 37
+    },
+    "witness_signature": "b3a4972fe68cccd10270ee77ebf8bb117dcfa1a254b53cac439e5a7d2a9382a84232d18e910b82786e8e11348c6c6d8afd764b301722c34636405796cb899e4501"
+  },
+  "transactions": [
+    {
+      "raw_data": {
+        "ref_block_bytes": "b8e0",
+        "ref_block_hash": "a6c379f76fcaee8f",
+        "expiration": 1784265594000,
+        "contract": [
+          {
+            "parameter": {
+              "value": {
+                "owner_address": "41f39ebac5715f50b4a7e397b76330608d44456006",
+                "to_address": "416089190d5842b7539f790e9689316a0bba9af4e1",
+                "amount": 730560
+              },
+              "type_url": "type.googleapis.com/protocol.TransferContract"
+            },
+            "type": "TransferContract"
+          }
+        ],
+        "timestamp": 1784265534000
+      },
+      "signature": [
+        "6af1f0059c4bc2d45b00107f0c7db798817eed356fafe12b886a64f0b2d3ea9d48f28ac344c83d261da020291a6de56f0253108c5ab91120ef680570c83753a11b"
+      ],
+      "ret": [{ "contractRet": "SUCCESS" }],
+      "raw_data_hex": "0a02b8e02208a6c379f76fcaee8f4090a991f4f6335a67080112630a2d747970652e676f6f676c65617069732e636f6d2f70726f746f636f6c2e5472616e73666572436f6e747261637412320a1541f39ebac5715f50b4a7e397b76330608d444560061215416089190d5842b7539f790e9689316a0bba9af4e118c0cb2c70b0d48df4f633",
+      "txID": "9b103202ad1a157c76c0ffc30b26aa0b70478492de7392f578617fed3ec47006"
+    },
+    {
+      "raw_data": {
+        "ref_block_bytes": "b8ce",
+        "ref_block_hash": "496472258ba51ef6",
+        "expiration": 1784265837638,
+        "contract": [
+          {
+            "parameter": {
+              "value": {
+                "owner_address": "41f7c3feccb6461aab0fd25f61d9560645b08228cb",
+                "to_address": "41b06b4139895c9f51c967c9f3d9089ca721e8e34c",
+                "amount": 668000
+              },
+              "type_url": "type.googleapis.com/protocol.TransferContract"
+            },
+            "type": "TransferContract"
+          }
+        ],
+        "timestamp": 1784265537021280800
+      },
+      "signature": [
+        "31d172800cb6345d114c8bcc5bc1e886a8a23f930b0440a9ac0294ef23d8417134a49386ceb035a192184cd5429a804d5de09b300be9df0aa7e0fce6af64e65401"
+      ],
+      "ret": [{ "contractRet": "SUCCESS" }],
+      "raw_data_hex": "0a02b8ce2208496472258ba51ef640c698a0f4f6335a67080112630a2d747970652e676f6f676c65617069732e636f6d2f70726f746f636f6c2e5472616e73666572436f6e747261637412320a1541f7c3feccb6461aab0fd25f61d9560645b08228cb121541b06b4139895c9f51c967c9f3d9089ca721e8e34c18e0e22870a08480f9d681bfe118",
+      "txID": "d86a3fe46c5dc2feddcad30459123374a4d4e47071aa4ba098ec74409c0920ad"
+    },
+    {
+      "raw_data": {
+        "ref_block_bytes": "b8cf",
+        "ref_block_hash": "0419da33a999153f",
+        "expiration": 1784265838090,
+        "contract": [
+          {
+            "parameter": {
+              "value": {
+                "owner_address": "41bac65c2ef1136fda52d4c0e7fecb67620d7dac36",
+                "to_address": "410c0a7c90de66dc9fc3cba99d5ff2b4bdd375452c",
+                "amount": 159800
+              },
+              "type_url": "type.googleapis.com/protocol.TransferContract"
+            },
+            "type": "TransferContract"
+          }
+        ],
+        "timestamp": 1784265538090103076
+      },
+      "signature": [
+        "30df01107774419e756456854b42d841e66a8e86a72ca571035026ef1c64b65c3275d6cdc46ef7ef5cc42c961ba2b57e5859da35fa6437924da849df8400534800"
+      ],
+      "ret": [{ "contractRet": "SUCCESS" }],
+      "raw_data_hex": "0a02b8cf22080419da33a999153f408a9ca0f4f6335a67080112630a2d747970652e676f6f676c65617069732e636f6d2f70726f746f636f6c2e5472616e73666572436f6e747261637412320a1541bac65c2ef1136fda52d4c0e7fecb67620d7dac361215410c0a7c90de66dc9fc3cba99d5ff2b4bdd375452c18b8e00970a4e2d3f6da81bfe118",
+      "txID": "67a599a192b66de9ed751fe4491481ddbe678a16a337a7c25c2f4fc2ec483e01"
+    },
+    {
+      "raw_data": {
+        "ref_block_bytes": "b8e1",
+        "ref_block_hash": "a5a6ddc73b219f36",
+        "expiration": 1784265597000,
+        "contract": [
+          {
+            "parameter": {
+              "value": {
+                "owner_address": "4171d07f3edf18b0ed2e10e5b010b3e3b9db61e5d2",
+                "contract_address": "41eca9bc828a3005b9a3b909f2cc5c2a54794de05f",
+                "data": "a9059cbb00000000000000000000000048bc95c9763de2b69572f24125a666a3fbd125990000000000000000000000000000000000000000000000000000000003473bc0"
+              },
+              "type_url": "type.googleapis.com/protocol.TriggerSmartContract"
+            },
+            "type": "TriggerSmartContract"
+          }
+        ],
+        "timestamp": 1784265537000,
+        "fee_limit": 225000000
+      },
+      "signature": [
+        "5a2febf36fbb032e4b043b604948e5e72e980dfd22afbbef91fc6c03b97b4ac5471c0afb54ce210ba09194e05807f02a8dff1a83c10094fe59ab96d08ac9598c1c"
+      ],
+      "ret": [{ "contractRet": "SUCCESS" }],
+      "raw_data_hex": "0a02b8e12208a5a6ddc73b219f3640c8c091f4f6335aae01081f12a9010a31747970652e676f6f676c65617069732e636f6d2f70726f746f636f6c2e54726967676572536d617274436f6e747261637412740a154171d07f3edf18b0ed2e10e5b010b3e3b9db61e5d2121541eca9bc828a3005b9a3b909f2cc5c2a54794de05f2244a9059cbb00000000000000000000000048bc95c9763de2b69572f24125a666a3fbd125990000000000000000000000000000000000000000000000000000000003473bc070e8eb8df4f6339001c0f4a46b",
+      "txID": "6c02afdb8ccac9b6f65b240e00751703ba9907e5b55fa425f65f44a370dc49c7"
+    },
+    {
+      "raw_data": {
+        "ref_block_bytes": "b8cf",
+        "ref_block_hash": "0419da33a999153f",
+        "expiration": 1784265839503,
+        "contract": [
+          {
+            "parameter": {
+              "value": {
+                "owner_address": "41f7c3feccb6461aab0fd25f61d9560645b08228cb",
+                "to_address": "41b06b4139895c9f51c967c9f3d9089ca721e8e34c",
+                "amount": 692000
+              },
+              "type_url": "type.googleapis.com/protocol.TransferContract"
+            },
+            "type": "TransferContract"
+          }
+        ],
+        "timestamp": 1784265539098567900
+      },
+      "signature": [
+        "e826a2c8a95025b486422d3a62dd6c3a448b8ef9c385868796cf92c3b37035884b9627813cd37a9aff53d728cce4b130104bf0c4a389a3554c4267fef7f128e901"
+      ],
+      "ret": [{ "contractRet": "SUCCESS" }],
+      "raw_data_hex": "0a02b8cf22080419da33a999153f408fa7a0f4f6335a67080112630a2d747970652e676f6f676c65617069732e636f6d2f70726f746f636f6c2e5472616e73666572436f6e747261637412320a1541f7c3feccb6461aab0fd25f61d9560645b08228cb121541b06b4139895c9f51c967c9f3d9089ca721e8e34c18a09e2a70dcc9c3d7de81bfe118",
+      "txID": "e337350f3093a017c4aa7d0db9a4129d7a9cbc37b49b9c667a5e0e8201d35c37"
+    },
+    {
+      "raw_data": {
+        "ref_block_bytes": "b860",
+        "ref_block_hash": "62d11aa84ec573bc",
+        "expiration": 1784291188277,
+        "contract": [
+          {
+            "parameter": {
+              "value": {
+                "owner_address": "41c9800bbfa00adf6d7e1f3d3a7a6e790b3d8a9e94",
+                "to_address": "41e160af6cc803143085adb999dbba20217601a266",
+                "amount": 30700
+              },
+              "type_url": "type.googleapis.com/protocol.TransferContract"
+            },
+            "type": "TransferContract"
+          }
+        ],
+        "timestamp": 1784265288279
+      },
+      "signature": [
+        "b69c0eac5fb5e26f58e09718bac99de34a018deaa2b0208f1bfb057b30a92b441789fd85e5810ed2363d16927c6e27bd046460527512efc26eaf4404dc7b649101"
+      ],
+      "ret": [{ "contractRet": "SUCCESS" }],
+      "raw_data_hex": "0a02b860220862d11aa84ec573bc40b5bcab80f7335a67080112630a2d747970652e676f6f676c65617069732e636f6d2f70726f746f636f6c2e5472616e73666572436f6e747261637412320a1541c9800bbfa00adf6d7e1f3d3a7a6e790b3d8a9e94121541e160af6cc803143085adb999dbba20217601a26618ecef0170d7d4fef3f633",
+      "txID": "25305a86a3b65dbb1527868d6ccb1f7f1bcc19930dc79ca229cfa677d5eef7e3"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+[
+  {
+    "id": "9b103202ad1a157c76c0ffc30b26aa0b70478492de7392f578617fed3ec47006",
+    "blockNumber": 69253346,
+    "blockTimeStamp": 1784265540000,
+    "contractResult": [""],
+    "receipt": { "net_usage": 267 }
+  },
+  {
+    "id": "d86a3fe46c5dc2feddcad30459123374a4d4e47071aa4ba098ec74409c0920ad",
+    "blockNumber": 69253346,
+    "blockTimeStamp": 1784265540000,
+    "contractResult": [""],
+    "receipt": { "net_usage": 270 }
+  },
+  {
+    "id": "67a599a192b66de9ed751fe4491481ddbe678a16a337a7c25c2f4fc2ec483e01",
+    "blockNumber": 69253346,
+    "blockTimeStamp": 1784265540000,
+    "contractResult": [""],
+    "receipt": { "net_usage": 270 }
+  },
+  {
+    "id": "6c02afdb8ccac9b6f65b240e00751703ba9907e5b55fa425f65f44a370dc49c7",
+    "blockNumber": 69253346,
+    "blockTimeStamp": 1784265540000,
+    "contractResult": ["0000000000000000000000000000000000000000000000000000000000000000"],
+    "contract_address": "41eca9bc828a3005b9a3b909f2cc5c2a54794de05f",
+    "receipt": {
+      "origin_energy_usage": 29650,
+      "energy_usage_total": 29650,
+      "net_usage": 345,
+      "result": "SUCCESS"
+    },
+    "log": [
+      {
+        "address": "eca9bc828a3005b9a3b909f2cc5c2a54794de05f",
+        "topics": [
+          "ddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef",
+          "00000000000000000000000071d07f3edf18b0ed2e10e5b010b3e3b9db61e5d2",
+          "00000000000000000000000048bc95c9763de2b69572f24125a666a3fbd12599"
+        ],
+        "data": "0000000000000000000000000000000000000000000000000000000003473bc0"
+      }
+    ]
+  },
+  {
+    "id": "e337350f3093a017c4aa7d0db9a4129d7a9cbc37b49b9c667a5e0e8201d35c37",
+    "blockNumber": 69253346,
+    "blockTimeStamp": 1784265540000,
+    "contractResult": [""],
+    "receipt": { "net_usage": 270 }
+  },
+  {
+    "id": "25305a86a3b65dbb1527868d6ccb1f7f1bcc19930dc79ca229cfa677d5eef7e3",
+    "blockNumber": 69253346,
+    "blockTimeStamp": 1784265540000,
+    "contractResult": [""],
+    "receipt": { "net_usage": 267 }
+  }
+]

@@ -1,0 +1,9 @@
+[
+  {
+    "id": "0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef",
+    "fee": 1100000,
+    "blockNumber": 69253346,
+    "blockTimeStamp": 1784265540000,
+    "receipt": { "net_fee": 1100000 }
+  }
+]

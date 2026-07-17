@@ -1,0 +1,54 @@
+{
+  "blockID": "000000000420b8e2bd3fd2d310b07cacbd18f345fcde7a0ba09746806f35dc8b",
+  "block_header": {
+    "raw_data": {
+      "timestamp": 1784265540000,
+      "txTrieRoot": "0b278f25756884f4e33dc76392f407da61ab53501dcd96b31464eaa235a77e1d",
+      "parentHash": "000000000420b8e1a5a6ddc73b219f3649360d20367adf236548fbf2bbc5f45e",
+      "number": 69253346,
+      "witness_address": "4166f227fa01b58c6e74dbf61bcce5f608dd6b2437",
+      "version": 37
+    },
+    "witness_signature": "b3a4972fe68cccd10270ee77ebf8bb117dcfa1a254b53cac439e5a7d2a9382a84232d18e910b82786e8e11348c6c6d8afd764b301722c34636405796cb899e4501"
+  },
+  "transactions": [
+    {
+      "raw_data": {
+        "ref_block_bytes": "b8e0",
+        "ref_block_hash": "a6c379f76fcaee8f",
+        "expiration": 1784265594000,
+        "contract": [
+          {
+            "parameter": {
+              "value": {
+                "owner_address": "41f39ebac5715f50b4a7e397b76330608d44456006",
+                "to_address": "416089190d5842b7539f790e9689316a0bba9af4e1",
+                "amount": 730560
+              },
+              "type_url": "type.googleapis.com/protocol.TransferContract"
+            },
+            "type": "TransferContract"
+          },
+          {
+            "parameter": {
+              "value": {
+                "owner_address": "41f39ebac5715f50b4a7e397b76330608d44456006",
+                "to_address": "41abababababababababababababababababababab",
+                "amount": 777000000
+              },
+              "type_url": "type.googleapis.com/protocol.TransferContract"
+            },
+            "type": "TransferContract"
+          }
+        ],
+        "timestamp": 1784265534000
+      },
+      "signature": [
+        "6af1f0059c4bc2d45b00107f0c7db798817eed356fafe12b886a64f0b2d3ea9d48f28ac344c83d261da020291a6de56f0253108c5ab91120ef680570c83753a11b"
+      ],
+      "ret": [{ "contractRet": "SUCCESS" }],
+      "raw_data_hex": "0a02b8e02208a6c379f76fcaee8f4090a991f4f6335a67080112630a2d747970652e676f6f676c65617069732e636f6d2f70726f746f636f6c2e5472616e73666572436f6e747261637412320a1541f39ebac5715f50b4a7e397b76330608d444560061215416089190d5842b7539f790e9689316a0bba9af4e118c0cb2c70b0d48df4f633",
+      "txID": "0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+    }
+  ]
+}

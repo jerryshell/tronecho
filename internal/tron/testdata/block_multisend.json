@@ -1,0 +1,44 @@
+{
+  "blockID": "000000000420b8e2bd3fd2d310b07cacbd18f345fcde7a0ba09746806f35dc8b",
+  "block_header": {
+    "raw_data": {
+      "timestamp": 1784265540000,
+      "txTrieRoot": "0b278f25756884f4e33dc76392f407da61ab53501dcd96b31464eaa235a77e1d",
+      "parentHash": "000000000420b8e1a5a6ddc73b219f3649360d20367adf236548fbf2bbc5f45e",
+      "number": 69253346,
+      "witness_address": "4166f227fa01b58c6e74dbf61bcce5f608dd6b2437",
+      "version": 37
+    },
+    "witness_signature": "b3a4972fe68cccd10270ee77ebf8bb117dcfa1a254b53cac439e5a7d2a9382a84232d18e910b82786e8e11348c6c6d8afd764b301722c34636405796cb899e4501"
+  },
+  "transactions": [
+    {
+      "raw_data": {
+        "ref_block_bytes": "b8e1",
+        "ref_block_hash": "a5a6ddc73b219f36",
+        "expiration": 1784265597000,
+        "contract": [
+          {
+            "parameter": {
+              "value": {
+                "owner_address": "4171d07f3edf18b0ed2e10e5b010b3e3b9db61e5d2",
+                "contract_address": "41eca9bc828a3005b9a3b909f2cc5c2a54794de05f",
+                "data": "a9059cbb00000000000000000000000048bc95c9763de2b69572f24125a666a3fbd125990000000000000000000000000000000000000000000000000000000003473bc0"
+              },
+              "type_url": "type.googleapis.com/protocol.TriggerSmartContract"
+            },
+            "type": "TriggerSmartContract"
+          }
+        ],
+        "timestamp": 1784265537000,
+        "fee_limit": 225000000
+      },
+      "signature": [
+        "5a2febf36fbb032e4b043b604948e5e72e980dfd22afbbef91fc6c03b97b4ac5471c0afb54ce210ba09194e05807f02a8dff1a83c10094fe59ab96d08ac9598c1c"
+      ],
+      "ret": [{ "contractRet": "SUCCESS" }],
+      "raw_data_hex": "0a02b8e12208a5a6ddc73b219f3640c8c091f4f6335aae01081f12a9010a31747970652e676f6f676c65617069732e636f6d2f70726f746f636f6c2e54726967676572536d617274436f6e747261637412740a154171d07f3edf18b0ed2e10e5b010b3e3b9db61e5d2121541eca9bc828a3005b9a3b909f2cc5c2a54794de05f2244a9059cbb00000000000000000000000048bc95c9763de2b69572f24125a666a3fbd125990000000000000000000000000000000000000000000000000000000003473bc070e8eb8df4f6339001c0f4a46b",
+      "txID": "aa11bb22cc33dd44ee55ff66aa77bb88cc99dd00ee11ff22aa33bb44cc55dd66"
+    }
+  ]
+}

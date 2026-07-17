@@ -1,0 +1,60 @@
+# 支持 ${VAR} 环境变量展开语法。
+# 所有选项均可通过 TRONECHO_* 环境变量覆盖（优先级：yaml > 环境变量 > 默认值）。
+chain:
+  # RPC 节点列表（有序）。正常时只用首个节点；
+  # 连续 node_fail_threshold 次失败后自动切换到下一个。
+  rpc_urls:
+    - "https://nile.trongrid.io"
+
+  # TronGrid API Key（可选）。也读 TRON_API_KEY 环境变量。
+  # api_key: "${TRON_API_KEY}"
+
+  # 首次启动且无历史进度时，从这个块号开始处理。
+  # 不填则从最新区块开始；设为 0 则从创世块开始。
+  # start_block: 0
+
+  # RPC 全局限流（请求/秒）。默认 10。
+  # rps: 10
+
+  # 是否解析资产元数据（symbol/decimals）。默认 true。
+  # resolve_assets: true
+
+  # RPC 节点连续失败次数阈值，达到后切换节点。默认 5。
+  # node_fail_threshold: 5
+
+  # 固化确认深度（已确认的块数）。Tron 最终确认需要 19 块，默认 19。
+  # confirmation_depth: 19
+
+  # 轮询间隔。默认 3s。
+  # poll_interval: 3s
+
+  # 补块并发数（每轮最大并发块数）。默认 20。
+  # catchup_batch: 20
+
+  # RPC 请求超时。默认 20s。
+  # request_timeout: 20s
+
+  # 单块最大重试次数。默认 3。
+  # max_retries: 3
+
+  # 失败块最大重试次数，超限后丢弃并告警。默认 10。
+  # failed_max_attempts: 10
+
+store:
+  # BadgerDB 数据目录。默认 ./data。
+  # badger_path: "./data"
+
+  # Badger vlog GC 间隔。默认 10m。
+  # vlog_gc_interval: 10m
+
+nats:
+  # NATS 服务器地址。需 JetStream 支持。
+  url: "nats://localhost:4222"
+
+  # Subject 前缀，默认 tronecho。由此派生全部 subject：
+  #   转账事件：{prefix}.event.transfer
+  #   地址管理：{prefix}.addr.v1.*
+  #   状态查询：{prefix}.status.v1.get
+  #   告警事件：{prefix}.alert
+  # JetStream stream 名称 = prefix。
+  # prefix: "tronecho"
