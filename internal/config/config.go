@@ -94,9 +94,7 @@ func applyDefaults(cfg *Config) {
 	c.MaxRetries = intWithDefault(c.MaxRetries, "TRONECHO_MAX_RETRIES", defaultMaxRetries)
 	c.FailedMaxAttempts = intWithDefault(c.FailedMaxAttempts, "TRONECHO_FAILED_MAX_ATTEMPTS", defaultFailedMaxAttempts)
 
-	if c.RPS <= 0 {
-		c.RPS = floatWithDefault(0, "TRONECHO_RPS", defaultRPS)
-	}
+	c.RPS = floatWithDefault(c.RPS, "TRONECHO_RPS", defaultRPS)
 
 	if c.APIKey == "" {
 		c.APIKey = os.Getenv("TRON_API_KEY")
@@ -120,38 +118,38 @@ func applyDefaults(cfg *Config) {
 	}
 }
 
-func intWithDefault(val int, envKey string, fallback int) int {
-	if val != 0 {
-		return val
-	}
+func intWithDefault(yamlVal int, envKey string, fallback int) int {
 	if v := os.Getenv(envKey); v != "" {
 		if n, err := strconv.Atoi(v); err == nil {
 			return n
 		}
 	}
+	if yamlVal != 0 {
+		return yamlVal
+	}
 	return fallback
 }
 
-func floatWithDefault(val float64, envKey string, fallback float64) float64 {
-	if val != 0 {
-		return val
-	}
+func floatWithDefault(yamlVal float64, envKey string, fallback float64) float64 {
 	if v := os.Getenv(envKey); v != "" {
 		if f, err := strconv.ParseFloat(v, 64); err == nil {
 			return f
 		}
 	}
+	if yamlVal != 0 {
+		return yamlVal
+	}
 	return fallback
 }
 
-func durationWithDefault(val time.Duration, envKey string, fallback time.Duration) time.Duration {
-	if val != 0 {
-		return val
-	}
+func durationWithDefault(yamlVal time.Duration, envKey string, fallback time.Duration) time.Duration {
 	if v := os.Getenv(envKey); v != "" {
 		if d, err := time.ParseDuration(v); err == nil {
 			return d
 		}
+	}
+	if yamlVal != 0 {
+		return yamlVal
 	}
 	return fallback
 }
