@@ -14,14 +14,14 @@ import (
 
 // Stats 是 status 探针的数据源。
 type Stats struct {
-	ChainHeight   uint64
+	ChainHeight     uint64
 	ProcessedHeight uint64
-	Lag           uint64
-	FailedBlocks  int
-	Addresses     int
-	AssetsCached  int
-	ActiveNode    string
-	StartedAt     time.Time
+	Lag             uint64
+	FailedBlocks    int
+	Addresses       int
+	AssetsCached    int
+	ActiveNode      string
+	StartedAt       time.Time
 }
 
 type Worker struct {
@@ -33,11 +33,11 @@ type Worker struct {
 	em       *Emitter
 	logger   *slog.Logger
 
-	chainHeight   uint64
+	chainHeight     uint64
 	processedHeight uint64
-	failedCount   int
-	startedAt     time.Time
-	mu            sync.RWMutex // guards chain/processed/failed (status reader)
+	failedCount     int
+	startedAt       time.Time
+	mu              sync.RWMutex // guards chain/processed/failed (status reader)
 
 	ctx    context.Context
 	cancel context.CancelFunc
@@ -83,14 +83,14 @@ func (w *Worker) Stats() Stats {
 	w.mu.RLock()
 	defer w.mu.RUnlock()
 	return Stats{
-		ChainHeight:   w.chainHeight,
+		ChainHeight:     w.chainHeight,
 		ProcessedHeight: w.processedHeight,
-		Lag:           w.chainHeight - w.processedHeight,
-		FailedBlocks:  w.failedCount,
-		Addresses:     w.matcher.Count(),
-		AssetsCached:  w.resolver.AssetsCached(),
-		ActiveNode:    w.client.ActiveNode(),
-		StartedAt:     w.startedAt,
+		Lag:             w.chainHeight - w.processedHeight,
+		FailedBlocks:    w.failedCount,
+		Addresses:       w.matcher.Count(),
+		AssetsCached:    w.resolver.AssetsCached(),
+		ActiveNode:      w.client.ActiveNode(),
+		StartedAt:       w.startedAt,
 	}
 }
 

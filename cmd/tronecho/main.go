@@ -360,15 +360,15 @@ func (a *addrAPI) handleList(m *nats.Msg) {
 func (a *addrAPI) handleStatus(m *nats.Msg) {
 	st := a.worker.Stats()
 	respond(m, okReply(map[string]any{
-		"chainHeight":   st.ChainHeight,
+		"chainHeight":     st.ChainHeight,
 		"processedHeight": st.ProcessedHeight,
-		"lag":           st.Lag,
-		"failedBlocks":  st.FailedBlocks,
-		"addresses":     st.Addresses,
-		"assetsCached":  st.AssetsCached,
-		"activeNode":    st.ActiveNode,
-		"startedAt":     st.StartedAt.Unix(),
-		"uptimeSec":     int(time.Since(st.StartedAt).Seconds()),
+		"lag":             st.Lag,
+		"failedBlocks":    st.FailedBlocks,
+		"addresses":       st.Addresses,
+		"assetsCached":    st.AssetsCached,
+		"activeNode":      st.ActiveNode,
+		"startedAt":       st.StartedAt.Unix(),
+		"uptimeSec":       int(time.Since(st.StartedAt).Seconds()),
 	}))
 }
 

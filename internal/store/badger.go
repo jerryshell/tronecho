@@ -14,9 +14,9 @@ import (
 
 // Key 布局，全部带 v1/ 前缀：
 const (
-	latestBlockKey  = "v1/tron/latest_block"
-	failedPrefix    = "v1/tron/failed/"
-	addrPrefix      = "v1/addr/"
+	latestBlockKey   = "v1/tron/latest_block"
+	failedPrefix     = "v1/tron/failed/"
+	addrPrefix       = "v1/addr/"
 	assetTRC20Prefix = "v1/asset/trc20/"
 	assetTRC10Prefix = "v1/asset/trc10/"
 )

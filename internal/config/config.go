@@ -20,8 +20,8 @@ const (
 	defaultResolveAssets     = true
 	defaultVlogGCInterval    = 10 * time.Minute
 	defaultRPS               = 10.0
-	defaultBadgerPath         = "./data"
-	defaultNATSPrefix         = "tronecho"
+	defaultBadgerPath        = "./data"
+	defaultNATSPrefix        = "tronecho"
 )
 
 type Config struct {
